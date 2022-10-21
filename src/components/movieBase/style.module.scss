@@ -1,0 +1,33 @@
+.wrapper{
+    background-color: black;
+}
+.background-movie{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: brightness(0.4);
+    img{
+        width: 100%;
+        display: block;
+
+    }
+}
+.main{
+    width: 900px;
+    margin: 0 auto;
+    @media screen and (max-width:1000px) {
+        width: 800px;
+    }
+    @media screen and (max-width:850px) {
+        width: 600px;
+    }
+    @media screen and (max-width:650px) {
+        width: 500px;
+        
+    }
+    @media screen and (max-width:500px) {
+        width: 400px;
+        
+    }
+}

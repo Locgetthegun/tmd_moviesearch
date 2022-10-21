@@ -1,0 +1,69 @@
+.wrapper{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    @media screen and (max-width:650px) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+$background_main:rgba(0, 0, 0, 0.719);
+$text_second:#00fc77;
+.poster{
+    width: 44.44%;
+    @media screen and (max-width:650px) {
+        width: 90%;
+    }
+    img{
+        width: 100%;
+    }
+    flex-shrink: 0;
+}
+.movie_infor-container{
+    box-sizing: border-box;
+    padding: 2rem;
+    background-color: $background_main ;
+    .title{
+        color: var(--textColor_white);
+        font-size: 4rem;
+    }
+    .decription{
+        color: var(--textColor_white);
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        margin: 10px 0 40px 0;
+    }
+    .movie-genre{
+        color: $text_second;
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+    .moviemaker{
+        color: var(--textColor_white);
+        font-size: 1.5rem;
+    }
+}
+.number_infor{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+    .number_infor--container{
+        width: calc(100% / 2);
+        margin-top: 10px;
+        .number_infor-type{
+            font-size: 1.5rem;
+            color: var(--textColor_white);
+        }
+        .number_infor-value{
+            color: $text_second;
+            font-size: 2.4rem;
+        }
+    }
+
+}
+@media screen and (max-width:650px) {
+    .movie_infor-container{
+        width: 90%;
+    }
+}
